@@ -1,4 +1,4 @@
-package model;
+package com.moe.springsecuritydemo.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

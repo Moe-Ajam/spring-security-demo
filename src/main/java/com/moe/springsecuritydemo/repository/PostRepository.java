@@ -1,6 +1,6 @@
-package repository;
+package com.moe.springsecuritydemo.repository;
 
-import model.Posts;
+import com.moe.springsecuritydemo.model.Posts;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

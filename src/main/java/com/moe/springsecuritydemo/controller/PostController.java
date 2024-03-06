@@ -1,11 +1,11 @@
-package controller;
+package com.moe.springsecuritydemo.controller;
 
 import lombok.RequiredArgsConstructor;
-import model.Posts;
+import com.moe.springsecuritydemo.model.Posts;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import service.PostService;
+import com.moe.springsecuritydemo.service.PostService;
 
 import java.util.List;
 

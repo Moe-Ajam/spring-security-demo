@@ -1,9 +1,9 @@
-package service;
+package com.moe.springsecuritydemo.service;
 
 import lombok.RequiredArgsConstructor;
-import model.Posts;
+import com.moe.springsecuritydemo.model.Posts;
 import org.springframework.stereotype.Service;
-import repository.PostRepository;
+import com.moe.springsecuritydemo.repository.PostRepository;
 
 import java.util.List;
 
