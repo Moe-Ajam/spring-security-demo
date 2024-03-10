@@ -1,6 +1,5 @@
 package com.moe.springsecuritydemo.config;
 
-import com.moe.springsecuritydemo.service.CustomAuthenticationProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,7 +11,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @RequiredArgsConstructor
 public class WebAuthorizationConfig {
 
-    private final CustomAuthenticationProvider authenticationProvider;
+    //private final CustomAuthenticationProvider authenticationProvider;
 
     @Bean
     SecurityFilterChain configure(HttpSecurity http) throws Exception {
@@ -23,7 +22,7 @@ public class WebAuthorizationConfig {
                 c -> c.anyRequest().authenticated()
         );
 
-        http.authenticationProvider(authenticationProvider);
+        //http.authenticationProvider(authenticationProvider);
 
         return http.build();
     }
