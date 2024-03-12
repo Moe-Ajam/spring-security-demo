@@ -1,7 +1,5 @@
 package com.moe.springsecuritydemo.config;
 
-import com.moe.springsecuritydemo.filter.AuthenticationLoggingFilter;
-import com.moe.springsecuritydemo.filter.RequestValidationFilter;
 import com.moe.springsecuritydemo.filter.StaticKeyAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
