@@ -1,6 +1,7 @@
 package com.moe.springsecuritydemo.config;
 
 import com.moe.springsecuritydemo.filter.StaticKeyAuthenticationFilter;
+import com.moe.springsecuritydemo.service.CustomEntryPoint;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,6 +19,11 @@ public class WebAuthorizationConfig {
 
     @Bean
     SecurityFilterChain configure(HttpSecurity http) throws Exception {
+
+        http.httpBasic(c -> {
+            c.realmName("OTHER");
+            c.authenticationEntryPoint(new CustomEntryPoint());
+        });
 
         http.httpBasic(Customizer.withDefaults());
 
